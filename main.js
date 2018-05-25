@@ -36,7 +36,7 @@
     ]
 }`;
 
-var requestURL = "https://groutchkeu.free.fr/photos.JSON";
+var requestURL = "https://groutch.github.io/Diaporama/photos.JSON";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
