@@ -1,55 +1,17 @@
-    var sound =document.createElement("audio");
-    sound.src = "quack.mp3";
-    var jsondata= `
-    {
-        "images": [
-        {
-            "name": "Green Ranger",
-            "imgsrc": "./images/greenranger.jpg",
-            "secretIdentity": "Tommy Oliver"
-        },
-        {
-            "name": "Yellow Ranger",
-            "imgsrc": "./images/yellowranger.jpg",
-            "secretIdentity": "Trini Kwan"
-        },
-        {
-            "name": "Pink Ranger",
-            "imgsrc": "./images/pinkranger.jpg",
-            "secretIdentity": "Kimberly Hart"
-        },
-        {
-            "name": "Red Ranger",
-            "imgsrc": "./images/redranger.png",
-            "secretIdentity": "Jason Lee Scott"
-        },
-        {
-            "name": "Black Ranger",
-            "imgsrc": "./images/blackranger.png",
-            "secretIdentity": "Zackary Taylor"
-        },
-        {
-            "name": "Blue Ranger",
-            "imgsrc": "./images/blueranger.jpg",
-            "secretIdentity": "William Cranston"
-        }
-    ]
-}`;
-
+var sound =document.createElement("audio");
+sound.src = "quack.mp3";
+var jsondata2;
 var requestURL = "https://groutch.github.io/Diaporama/photos.JSON";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
-request.responseType = 'json';
+request.responseType = 'text';
 request.send();
 request.onload = function() {
-  var jsondata2 = request.response;
-  console.log(jsondata2);
-  var json=JSON.parse(jsondata2);
-}
-
-console.log(json);
-$(document).ready(function () {
-    var idxphoto=0;
+    jsondata2 = request.response;
+    console.log("jsondata2: \n"+jsondata2);
+    var json = JSON.parse(jsondata2);
+    console.log("json: \n"+json);
+        var idxphoto=0;
     displayImg();
     //changement des images par les fleches du clavier
     $(document).on("keydown", function(event){
@@ -92,6 +54,6 @@ $(document).ready(function () {
         $("#description").html(json.images[idxphoto].secretIdentity);
         $("#title").html(json.images[idxphoto].name);
     }
-});
+};
 
 
