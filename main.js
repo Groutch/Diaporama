@@ -42,12 +42,12 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-  var machintruc = request.response;
-  console.log(machintruc);
+  var jsondata2 = request.response;
+  console.log(jsondata2);
+  var json=JSON.parse(jsondata2);
 }
 
-var json=JSON.parse(jsondata)
-
+console.log(json);
 $(document).ready(function () {
     var idxphoto=0;
     displayImg();
