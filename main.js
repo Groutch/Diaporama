@@ -1,13 +1,13 @@
 var sound =document.createElement("audio");
 sound.src = "quack.mp3";
-var jsondata2;
-var requestURL = "https://groutch.github.io/Diaporama/photos.JSON";
+//le bout de code barbare pour récup le contenu du fichier JSON
+var requestURL = "https://groutch.github.io/Diaporama/photosGoodGuys.JSON";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'text';
 request.send();
 request.onload = function() {
-    jsondata2 = request.response;
+    var jsondata2 = request.response;
     console.log("jsondata2: \n"+jsondata2);
     var json = JSON.parse(jsondata2);
     console.log("json: \n"+json);
@@ -33,6 +33,8 @@ request.onload = function() {
     $(".btprev").on("click",backward);
     //changement des images avec le temps
     var intervalID = window.setInterval(forward, 1500);
+
+    //les differentes fonctions utilisées(avant arriere et affichage)
     function forward(){
         if (idxphoto < Number(json.images.length)-1) {
                 idxphoto++;

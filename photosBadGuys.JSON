@@ -1,0 +1,17 @@
+
+    {
+        "images": [
+        {
+            "name": "Goldar",
+            "imgsrc": "./images/goldar.jpg"
+        },
+        {
+            "name": "Rita",
+            "imgsrc": "./images/rita.jpg"
+        },
+        {
+            "name": "Scorpina",
+            "imgsrc": "./images/scorpina.jpg"
+        }
+    ]
+}

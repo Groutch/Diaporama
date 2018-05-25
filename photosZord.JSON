@@ -1,0 +1,17 @@
+
+    {
+        "images": [
+        {
+            "name": "DragonZord",
+            "imgsrc": "./images/dragonzord.jpg"
+        },
+        {
+            "name": "MegaZord",
+            "imgsrc": "./images/megazord.jpg"
+        },
+        {
+            "name": "TigerZord",
+            "imgsrc": "./images/tigerzord.jpg"
+        }
+    ]
+}
