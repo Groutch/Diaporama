@@ -1,0 +1,35 @@
+
+    {
+        "images": [
+        {
+            "name": "Green Ranger",
+            "imgsrc": "./images/greenranger.jpg",
+            "secretIdentity": "Tommy Oliver"
+        },
+        {
+            "name": "Yellow Ranger",
+            "imgsrc": "./images/yellowranger.jpg",
+            "secretIdentity": "Trini Kwan"
+        },
+        {
+            "name": "Pink Ranger",
+            "imgsrc": "./images/pinkranger.jpg",
+            "secretIdentity": "Kimberly Hart"
+        },
+        {
+            "name": "Red Ranger",
+            "imgsrc": "./images/redranger.png",
+            "secretIdentity": "Jason Lee Scott"
+        },
+        {
+            "name": "Black Ranger",
+            "imgsrc": "./images/blackranger.png",
+            "secretIdentity": "Zackary Taylor"
+        },
+        {
+            "name": "Blue Ranger",
+            "imgsrc": "./images/blueranger.jpg",
+            "secretIdentity": "William Cranston"
+        }
+    ]
+}
